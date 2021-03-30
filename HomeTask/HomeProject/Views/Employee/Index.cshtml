@@ -1,0 +1,89 @@
+﻿@model IEnumerable<HomeProject.Models.Employee>
+
+   
+
+<div>
+
+        <div class="container">
+            <div class="row">
+                @Html.ActionLink("Новый сотрудник","InsertEmployee", "Employee",null, new {@class="btn btn-success", @style= "background-color: #8dc63f" })
+
+            </div>
+        </div>
+        <div class="container" style="padding-top: 2%">
+            <div class="row"></div>
+            <div>
+                <table class="table table-hover">
+                    <thead style="font-weight: 400; text-align: center">
+                    <tr>
+                        <th scope="col">Должность</th>
+                        <th scope="col">Имя</th>
+                        <th scope="col">Фамилия</th>
+                        <th scope="col">Телефон</th>
+                        <th scope="col">Дата рождения</th>
+                        <td scope="col"></td>
+                    </tr>
+                    </thead>
+                    <tbody style="text-align: center">
+                        @foreach (var item in Model)
+                        {
+
+                            <tr>
+
+                                <td>@Html.DisplayFor(Modelitem => item.DepartmentName)</td>
+                                <td>@Html.DisplayFor(Modelitem => item.FirstName)</td>
+                                <td>@Html.DisplayFor(Modelitem => item.LastName)</td>
+                                <td>@Html.DisplayFor(Modelitem => item.Phone)</td>
+                                <td>@Html.DisplayFor(Modelitem => item.DateBirth)</td>
+                                <td>
+                                    <div>
+                                        @Html.ActionLink("редактировать", "DetalisEmployee",
+                                            "Employee", new { item.Id }, new {@style = "color: green"}) | 
+                                        @Html.ActionLink("удалить", "DeleteEmployee",
+                                            "Employee", new { item.Id }, new {@style = "color: red" })
+
+
+                                    </div>
+                                </td>
+                                @*<td ><a asp-controller="Employee" asp-action="DetalisWorkEmployee"> <img src="~/ico/edit_16x16.bmp" /></a></td>*@
+
+                        </tr>
+                        }
+                    </tbody>
+
+                </table>
+            </div>
+
+
+        </div>
+
+    }
+
+
+</div>
+
+
+
+
+
+    @*<div class="tabs">
+            <input type="radio" name="tab-btn" id="tab-btn-1" value="" checked>
+            <label for="tab-btn-1"> Вкладка 1</label>
+            <input type="radio" name="tab-btn" id="tab-btn-2" value="">
+            <label for="tab-btn-2"> Вкладка 2</label>
+            <input type="radio" name="tab-btn" id="tab-btn-3" value="">
+            <label for="tab-btn-3"> Вкладка 3</label>
+
+            <div id="content-1">
+                Содержимое 1...
+            </div>
+            <div id="content-2">
+                Содержимое 2...
+            </div>
+            <div id="content-3">
+                Содержимое 3...
+            </div>
+        </div>*@
+
+
+

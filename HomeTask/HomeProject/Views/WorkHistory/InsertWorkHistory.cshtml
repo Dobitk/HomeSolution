@@ -1,0 +1,75 @@
+﻿@model HomeProject.Models.WorkHistory
+<div class="container">
+    @using (Html.BeginForm("InsertWorkHistory", "WorkHistory", FormMethod.Post))
+    {
+        <div class="py-3">
+            <div class="container">
+                <div class="col-3 g-2"> </div>
+                <div class="row gx-5">
+                    <div class="col-md-12 p-4">
+                        <h3 class="mb-3" style="text-align: center">Место работы в прошлом<br></h3>
+                        <div class="row gy-5">
+                            <div class="col-12">
+                                <div class="p-3 border bg-light">
+                                    @Html.TextBoxFor(x => x.WorkName, new { @placeholder = "Работа", @type = "text", @class = "form-control" })
+                                    <div style="color: red">
+                                        @Html.ValidationMessageFor(x => x.WorkName)
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="p-3 border justify-content-center">
+                                    <div class="p-0 justify-content-center">Начало работы </div>
+
+                                    @Html.TextBoxFor(x => x.StartDate, "{0:dd.MM.yyyy}", new
+                                    {
+                                        //@style = "text-align: left",
+                                        onClick = "xCal(this, { lang: 'ru', order: 0 })",
+                                        onmouseenter = "xCal(this, { lang: 'ru', order: 0 })",
+                                        // onKeyUp = "xCal()",
+                                        value = ""
+                                    })
+
+
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="p-3 border bg-light r">
+                                    <div class="p-0">Конец работы @ViewBag.EmployeeID </div>
+                                    @Html.TextBoxFor(x => x.EndDate, "{0:dd.MM.yyyy}", new
+                                    {
+                                        //@style = "text-align: left",
+                                        onClick = "xCal(this, { lang: 'ru', order: 0 })",
+                                        onmouseenter = "xCal(this, { lang: 'ru', order: 0 })",
+                                        // onKeyUp = "xCal()",
+                                        value = ""
+                                    })
+
+
+                                </div>
+                            </div>
+
+
+                            <div class="col-6">
+                                <div class="p-3 border bg-light">
+
+                                    <button type="submit" class="btn btn-primary col-12">Сохранить</button>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="p-3 border bg-light">
+
+                                    @Html.ActionLink("Отмена", "DetalisEmployee", "Employee", new {id = @ViewBag.EmployeeID }, new { @class = "btn btn-primary col-12" })
+
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+           
+        </div>
+    }
+        </div>

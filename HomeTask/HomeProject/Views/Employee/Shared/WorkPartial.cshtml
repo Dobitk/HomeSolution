@@ -1,0 +1,53 @@
+﻿@model HomeProject.Models.AllEmployeeWorkFamily
+
+
+<div>
+
+    <div>
+
+
+        <table class="table table-hover">
+            <thead>
+            <tr colspan="4">
+                <div class="row">
+                    @Html.ActionLink("Новая запись", "InsertWorkHistory", "WorkHistory", null, new { @class = "btn btn-success", @style = "background-color: #8dc63f" })
+
+                </div>
+            </tr>
+            <tr>
+
+                <th>Место работы</th>
+                <th>Дата начала</th>
+                <th>Дата окончания</th>
+                <th></th>
+            </tr>
+            </thead>
+            <tbody>
+
+
+                @foreach (var item in Model.WorkHistories)
+                {
+
+                    <tr>
+                        <td>@Html.DisplayFor(Modelitem => item.WorkName)</td>
+                        <td>@Html.DisplayFor(Modelitem => item.StartDate)</td>
+                        <td>@Html.DisplayFor(Modelitem => item.EndDate)</td>
+                        <td>
+                            @Html.ActionLink("редактировать", "EditWorkHistory",
+                                "WorkHistory", new { id = item.Id }, new { @style = "color: green" }) |
+                            @Html.ActionLink("удалить", "DeleteWorkHistory",
+                                "WorkHistory", new { item.Id }, new {@style = "color: red" })
+
+
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+
+
+
+
+    </div>
+
+</div>    

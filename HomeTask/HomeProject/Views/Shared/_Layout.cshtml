@@ -1,0 +1,38 @@
+﻿@using HomeProject.Domain
+<!DOCTYPE html>
+
+<html>
+<head>
+    @await Html.PartialAsync("MetadatsPartial")
+
+    @await Html.PartialAsync("CssPartial")
+    <link rel="icon" type="image/png" sizes="64x64" href="~/images/title.png">
+</head>
+<body>
+
+    <div id="header-wrapper">
+        <div id="header" class="container">
+            <div id="logo">
+                <h1><img  type="image/png" src="~/images/project.png" width="64" height="64"/><a href="#">@Config.ProjectName</a></h1>
+            </div>
+            <div id="menu">
+
+                @await Html.PartialAsync("MenuPartial")
+            </div>
+
+
+        </div>
+    </div>
+
+    
+    <div id="wrapper">
+
+        <div id="featured-wrapper">
+            @RenderBody()
+        </div>
+    </div>
+    @await Html.PartialAsync("ScriptsPartial")
+</body>
+
+</html>
+

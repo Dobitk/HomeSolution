@@ -1,0 +1,7 @@
+D:\Project\HomeTask\HomeTask6_ADO\bin\Debug\HomeTask6_ADO.exe.config
+D:\Project\HomeTask\HomeTask6_ADO\bin\Debug\HomeTask6_ADO.exe
+D:\Project\HomeTask\HomeTask6_ADO\bin\Debug\HomeTask6_ADO.pdb
+D:\Project\HomeTask\HomeTask6_ADO\obj\Debug\HomeTask6_ADO.csprojAssemblyReference.cache
+D:\Project\HomeTask\HomeTask6_ADO\obj\Debug\HomeTask6_ADO.csproj.CoreCompileInputs.cache
+D:\Project\HomeTask\HomeTask6_ADO\obj\Debug\HomeTask6_ADO.exe
+D:\Project\HomeTask\HomeTask6_ADO\obj\Debug\HomeTask6_ADO.pdb

@@ -1,0 +1,10 @@
+D:\Project\HomeTask\HomeTask5\bin\Debug\HomeTask5.exe.config
+D:\Project\HomeTask\HomeTask5\bin\Debug\HomeTask5.exe
+D:\Project\HomeTask\HomeTask5\bin\Debug\HomeTask5.pdb
+D:\Project\HomeTask\HomeTask5\obj\Debug\HomeTask5_1.csprojAssemblyReference.cache
+D:\Project\HomeTask\HomeTask5\obj\Debug\HomeTask5.Form1.resources
+D:\Project\HomeTask\HomeTask5\obj\Debug\HomeTask5.Properties.Resources.resources
+D:\Project\HomeTask\HomeTask5\obj\Debug\HomeTask5_1.csproj.GenerateResource.cache
+D:\Project\HomeTask\HomeTask5\obj\Debug\HomeTask5_1.csproj.CoreCompileInputs.cache
+D:\Project\HomeTask\HomeTask5\obj\Debug\HomeTask5.exe
+D:\Project\HomeTask\HomeTask5\obj\Debug\HomeTask5.pdb

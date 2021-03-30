@@ -1,0 +1,62 @@
+﻿@model HomeProject.Models.Family
+<div class="container">
+    @using (Html.BeginForm("EditFamily", "Famely", FormMethod.Post))
+    {
+        <div class="py-3">
+            <div class="container">
+                <div class="col-3 g-2"> </div>
+                <div class="row gx-5">
+                    <div class="col-md-12 p-4">
+                        <h3 class="mb-3" style="text-align: center">Состав семьи<br></h3>
+                        <div class="row gy-5">
+                            <div class="col-12">
+                                <div class="p-3 border bg-light">
+                                    @Html.TextBoxFor(x => x.Description, new { @placeholder = "Семья", @type = "text", @class = "form-control" })
+                                    <div style="color: red">
+                                        @Html.ValidationMessageFor(x => x.Description)
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="p-3 border justify-content-center">
+                                    @*<div class="p-0 justify-content-center">Начало работы </div>*@
+
+                                    @Html.TextBoxFor(x => x.Yearbirth, new { @placeholder = "Год рождения", @type = "text", @class = "form-control" })
+                                    <div style="color: red">
+                                        @Html.ValidationMessageFor(x => x.Yearbirth)
+                                    </div>
+
+
+
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="p-3 justify-content-center">
+
+
+                                </div>
+                            </div>
+
+                            <div class="col-6">
+                                <div class="p-3 border bg-light">
+
+                                    <button type="submit" class="btn btn-primary col-12">Сохранить</button>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="p-3 border bg-light">
+
+                                    @Html.ActionLink("Отмена", "DetalisEmployee", "Employee", new { id = @ViewBag.EmployeeID }, new { @class = "btn btn-primary col-12" })
+
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    }
+</div>

@@ -1,0 +1,41 @@
+﻿@model HomeProject.Models.AllEmployeeWorkFamily
+@*checked*@
+<div class="container-fluid tabs">
+    <input type="radio" name="tab-btn" id="tab-btn-1" value="" checked>
+    <label for="tab-btn-1">Сотрудник</label>
+    <input type="radio" name="tab-btn" id="tab-btn-2" value="">
+    <label for="tab-btn-2">Работа</label>
+    <input type="radio" name="tab-btn" id="tab-btn-3" value="">
+    <label for="tab-btn-3">Семья</label>
+
+    <div id="content-1">
+        <div class="container">
+
+            <div>
+                @await Html.PartialAsync("Shared/EmployeePartial")
+
+            </div>
+
+
+        </div>
+    </div>
+
+    <div id="content-2">
+        <div class="container">
+            @await Html.PartialAsync("Shared/WorkPartial")
+        </div>
+
+    </div>
+
+    <div id="content-3">
+
+        <div class="container">
+
+            @await Html.PartialAsync("Shared/FamilyPartial")
+        </div>
+
+    </div>
+</div>
+
+
+

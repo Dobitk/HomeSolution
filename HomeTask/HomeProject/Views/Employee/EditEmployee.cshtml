@@ -1,0 +1,89 @@
+﻿@model HomeProject.Models.Employee
+<div class="container">
+    @using (Html.BeginForm("EditEmployee", "Employee", FormMethod.Post))
+    {
+        <div class="py-3">
+            <div class="container">
+                <div class="col-3 g-2"> </div>
+                <div class="row gx-5">
+                    <div class="col-md-12 p-4">
+                        <h3 class="mb-3" style="text-align: center">Сотрудник<br></h3>
+                        <div class="row gy-5">
+                            <div class="col-6">
+                                <div class="p-3 border bg-light">
+                                    @Html.TextBoxFor(x => x.FirstName, new { @placeholder = "Имя", @type = "text", @class = "form-control" })
+                                    <div style="color: red">
+                                        @Html.ValidationMessageFor(x => x.FirstName)
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="p-3 border bg-light">
+                                    @Html.TextBoxFor(x => x.LastName, new { @placeholder = "Фамилия", @type = "text", @class = "form-control" })
+                                    <div style="color: red"></div>
+                                    @Html.ValidationMessageFor(x => x.LastName)
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="p-3 border bg-light">
+                                    @Html.TextBoxFor(x => x.DepartmentName, new {
+                                   //@class = "p-3 border bg-light",
+                                        @class = "form-control",
+                                   @placeholder = "Должность",
+                                   @type = "text"
+                               })
+                                    <div style="color: red">
+                                        @Html.ValidationMessageFor(x => x.DepartmentName)
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="p-3 border bg-light">@Html.TextBoxFor(x => x.Phone, new { @placeholder = "Телефон", @type = "text", @class = "form-control" })</div>
+                            </div>
+                            <div class="col-6">
+                                <div class="p-3 border bg-light">
+                                    <div class="col-6">Дата рождения</div>
+
+                                    @Html.TextBoxFor(x => x.DateBirth, "{0:dd.MM.yyyy}", new
+                                    {
+                                        //@style = "text-align: left",
+                                        onClick = "xCal(this, { lang: 'ru', order: 0 })",
+                                        onmouseenter = "xCal(this, { lang: 'ru', order: 0 })",
+                                        // onKeyUp = "xCal()",
+                                        value = "",
+                                        @class = "form-control"
+                                    })
+ 
+                                </div>
+
+                            </div>
+                                           <div class="col-6">
+                                    <div class="p-3 justify-content-center">
+
+
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="p-3 border bg-light">
+
+                                        <button type="submit" class="btn btn-success col-12">Сохранить</button>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="p-3 border bg-light">
+
+
+                                        @Html.ActionLink("Отмена", "Index", "Employee", new { id = Model.Id }, new { @class = "btn btn-secondary col-12" })
+                                    </div>
+                                </div>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    }
+</div>

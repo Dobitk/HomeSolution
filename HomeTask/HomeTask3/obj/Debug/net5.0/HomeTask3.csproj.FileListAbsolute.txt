@@ -1,0 +1,16 @@
+D:\Project\HomeTask\HomeTask3\bin\Debug\net5.0\HomeTask3.exe
+D:\Project\HomeTask\HomeTask3\bin\Debug\net5.0\HomeTask3.deps.json
+D:\Project\HomeTask\HomeTask3\bin\Debug\net5.0\HomeTask3.runtimeconfig.json
+D:\Project\HomeTask\HomeTask3\bin\Debug\net5.0\HomeTask3.runtimeconfig.dev.json
+D:\Project\HomeTask\HomeTask3\bin\Debug\net5.0\HomeTask3.dll
+D:\Project\HomeTask\HomeTask3\bin\Debug\net5.0\ref\HomeTask3.dll
+D:\Project\HomeTask\HomeTask3\bin\Debug\net5.0\HomeTask3.pdb
+D:\Project\HomeTask\HomeTask3\obj\Debug\net5.0\HomeTask3.csprojAssemblyReference.cache
+D:\Project\HomeTask\HomeTask3\obj\Debug\net5.0\HomeTask3.GeneratedMSBuildEditorConfig.editorconfig
+D:\Project\HomeTask\HomeTask3\obj\Debug\net5.0\HomeTask3.AssemblyInfoInputs.cache
+D:\Project\HomeTask\HomeTask3\obj\Debug\net5.0\HomeTask3.AssemblyInfo.cs
+D:\Project\HomeTask\HomeTask3\obj\Debug\net5.0\HomeTask3.csproj.CoreCompileInputs.cache
+D:\Project\HomeTask\HomeTask3\obj\Debug\net5.0\HomeTask3.dll
+D:\Project\HomeTask\HomeTask3\obj\Debug\net5.0\ref\HomeTask3.dll
+D:\Project\HomeTask\HomeTask3\obj\Debug\net5.0\HomeTask3.pdb
+D:\Project\HomeTask\HomeTask3\obj\Debug\net5.0\HomeTask3.genruntimeconfig.cache
